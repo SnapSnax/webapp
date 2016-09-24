@@ -3,8 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SnapSnax</title>
+<<<<<<< HEAD
+  	<!-- JQuery -->
+  	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+=======
 	<!-- Reset CSS -->
 	<link rel="stylesheet" href="assets/css/reset.css">
+>>>>>>> b29875abb1930b3458af83e6e64b79bf16554768
  	<!-- Materialize -->
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 	<!-- Style.css -->
@@ -123,7 +128,13 @@
           
 		</div>
 
-
+<body onload="initialize()">
+ <div id="map" style="width: 320px; height: 480px;"></div>
+  <div>
+    <input id="address" type="textbox" value="Sydney, NSW">
+    <input type="button" value="Encode" onclick="codeAddress()">
+  </div>
+</body>
 
 
 
