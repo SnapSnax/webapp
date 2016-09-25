@@ -93,6 +93,7 @@ var auth = {
                     companyInfo.append(isOpen+ '<br>');
                     companyInfo.append('<img src="' +  response.businesses[randomInt].image_url + '"">' + '<br>');
                     companyInfo.append('<a href=' + yelpURL + '>' + yelpURL + '</a>' + '<br>');
+                    companyInfo.append('<iframe src=' + yelpURL + '>' + yelpURL + '</iframe>' + '<br>');
                     $("#results").append(companyInfo);
 
 
