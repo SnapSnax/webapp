@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SnapSnax</title>
-
-  	<!-- JQuery -->
-  	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  
+<!-- Stylesheets and scripts ===================================== -->
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<!-- Reset CSS -->
 	<link rel="stylesheet" href="assets/css/reset.css">
  	<!-- Materialize -->
@@ -17,37 +18,44 @@
 
 </head>
 
+<!-- Body ========================================================= -->
+
 <body>
 
-
+<!-- Nav bar with site logo that returns to homepage -->
 <nav>
   <div class="nav-wrapper red darken-3">
     <a href="index.html" class="brand-logo">SNAPSNAX</a>
-  <!--   <ul id="nav-mobile" class="right hide-on-med-and-down">
+  <!-- ============================================================= -->
+  <!-- In case we want side links
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a href="">sass</a></li>
       <li><a href="">sass</a></li>
       <li><a href="">sass</a></li>
     </ul> -->
+  <!-- ============================================================== -->
   </div>
 </nav>
 
+    <!-- Parallax Container -->
     <div class="parallax-container">
 
 	<div class="section no-pad-bot">
       <div class="container">
         <br><br>
+        <!-- Header in the center of page -->
         <h1 class="header center red-text text-darken-3">SnapSnax</h1>
         <div class="row center">
           <h4 class="header col s12 red-text text-darken-3 light">Solving your food indecisions one meal at a time.</h4>
         </div>
         <div class="row center">
+          <!-- Button that opens up modal to food and $$$ choices -->
           <a class="waves-effect waves-light btn modal-trigger red darken-3" href="#modal1">What are you having?</a>
         </div>
         <br><br>
-
       </div>
     </div>
-
+      <!-- Parallax image top -->
       <div class="parallax"><img src="assets/images/paperbag.jpg"></div>
     </div>
 	<!-- Main container div -->
@@ -60,19 +68,24 @@
 					<div class="card medium white darken-4">
             		<div class="card-content white-text">
               		<span class="card-title"></span>
-						<!-- Username input -->
+<!-- ====================================================================== -->
+						<!-- Username input for firebase storage -->
 					  	<!-- <div class="input-field col s6 red-text text-darken-3">
-          					<i class="material-icons prefix">account_circle</i>
-          					<input id="userName" type="text" class="">
+          					<i class="material-icons prefix">account_circle</i> -->
+                    <!-- Input id: userName -->
+          					<!-- <input id="userName" type="text" class="">
           					<label for="userName">Username</label>
         				</div> -->
+<!-- ====================================================================== -->
 						<!-- Location input -->
         				<div class="input-field col s6 red-text text-darken-3">
           					<i class="material-icons prefix">my_location</i>
+                    <!-- Input id: userLocation -->
           					<input id="userLocation" type="text" class="">
           					<label for="userLocation">Location</label>
         				</div>
-							<button class="btn waves-effect waves-light red darken-3" type="submit" name="action">Find your restaurant
+              <!-- Button to submit parameters and find a restaurant -->
+							<button class="btn waves-effect waves-light red darken-3" id="FindRest" type="submit" name="action">Find your restaurant
 							<i class="material-icons right">send</i>
 							</button>
         			</div>
@@ -93,7 +106,7 @@
     <div class="modal-content">
       <h4>Pick your meal options!</h4>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+    <!-- Input field with food choices -->
    <div class="input-field col s5">
     <select multiple icons">
       <option value="" disabled selected>Choose your options!</option>
@@ -103,9 +116,10 @@
       <option value="" data-icon="http://lorempixel.com/output/food-q-c-150-150-4.jpg" class="left circle">Take-out</option>
       <option value="" data-icon="http://lorempixel.com/output/food-q-c-150-150-5.jpg" class="left circle">Delivery</option>
 	  </select>
+    <!-- Labels the input field -->
     <label>What would you like?</label>
 	</div>
-
+  <!-- Input field with price range -->
 	<div class="input-field col s3 offset-s1">
     <select multiple icons">
       <option value="" disabled selected>Pick a price range!</option>
@@ -114,19 +128,20 @@
       <option value="" data-icon="http://lorempixel.com/output/food-q-c-150-150-3.jpg" class="left circle">$$$</option>
       <option value="" data-icon="http://lorempixel.com/output/food-q-c-150-150-4.jpg" class="left circle">$$$$</option>
     </select>
+    <!-- Labels the input field -->
     <label>How much are you looking to spend?</label>
   </div>
      <br><br><br><br><br>
     </div>
-
+    <!-- Modal button -->
     <div class="modal-footer">
-      <a href="#!" class=" submit modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class=" submit modal-action modal-close waves-effect waves-green btn-flat">Confirm</a>
     </div>
   </div>
           
 		</div>
 
-<!-- 
+<!-- Currently disabled map
 =======
 
 >>>>>>> origin
@@ -141,7 +156,7 @@
 
 	</div> <!-- Closes container div -->
 	
-	
+	<!-- Parallax bottom image -->
  <div class="parallax-container">
     <div class="parallax"><img src="assets/images/burger.jpg"></div>
   </div>
@@ -149,15 +164,19 @@
 
 </body>
 
+<!-- Footer with copyright ================================================================== -->
 <footer class="page-footer red darken-3">
 
    	<div class="footer-copyright red darken-3">
             <div class="container">
             © 2016 Copyright SnapSnax
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <!-- More links if we want -->
+            <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
             </div>
     </div>
 </footer>
+
+<!-- Scripts ================================================================================= -->
 	<!-- JQuery -->
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<!-- Compiled and minified JavaScript -->
